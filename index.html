@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Whether the Weather</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <button id='searchBtn' type="button">Search!</button>
+        <input id='searchField' type="text" placeholder="Search..">
+      </div>
+
+      <form>
+        <textarea class="cityName" id="cityName">
+        </textarea>
+          </form>
+
+
+
+
+      <p>Date/Time: <span id="datetime"></span></p>
+<!-- this displays the name of the city w/ the weather -->
+      <form>
+        <textarea class="name" id="name">
+        </textarea>
+          </form>
+      <!-- this is the box the temp gets displayed in -->
+      <form>
+      <textarea class="temp" id="temp">
+      </textarea>
+        </form>
+      <!-- this is the box the humidity gets displayed in -->
+      <form>
+      <textarea class="humidity" id="humidity">
+      </textarea>
+        </form>  
+      <!-- this is the box that displays the windspeed -->
+        <form>
+          <textarea class="speed" id="speed">
+          </textarea>
+            </form>  
+
+        <img type="image" id="weatherIcon" src = "">
+
+        <!-- here begins the 5-day forecast part -->
+       <div>
+         <div id="forcastOne">
+        <textarea id="date0"></textarea>
+        <img type="image" id="weatherIcon0" src = "">
+      <textarea id="temp0"></textarea>
+      <textarea id="humidity0"></textarea>
+         </div>
+
+         <div>
+          <div id="forcastTwo">
+         <textarea id="date8"></textarea>
+         <img type="image" id="weatherIcon8" src = "">
+       <textarea id="temp8"></textarea>
+       <textarea id="humidity8"></textarea>
+          </div>
+
+          <div>
+            <div id="forcastThree">
+           <textarea id="date16"></textarea>
+         <img type="image" id="weatherIcon16" src = "">
+         <textarea id="temp16"></textarea>
+         <textarea id="humidity16"></textarea>
+            </div>
+
+            <div>
+              <div id="forcastFour">
+             <textarea id="date24"></textarea>
+             <img type="image" id="weatherIcon24" src = "">
+           <textarea id="temp24"></textarea>
+           <textarea id="humidity24"></textarea>
+              </div>
+
+              <div>
+                <div id="forcastFive">
+               <textarea id="date32"></textarea>
+               <img type="image" id="weatherIcon32" src = "">
+             <textarea id="temp32"></textarea>
+             <textarea id="humidity32"></textarea>
+                </div>
+        
+    
+</body>
+</html>
+
+
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="weathermagic.js" type="text/javascript"></script>
+
+
+<!-- 
+c6dbc4ad804bfdc0473221ed78c36ae5 -->
